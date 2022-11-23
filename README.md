@@ -10,4 +10,10 @@ If we need multi node cluster then we can use KIND(Kubernetes in Docker) to setu
 
 In case you get ImagePullBackOff error in Pod status due to size of selenium browser docker images then you can first pull the image before creating pod using "minikube image pull selenium/hub:4.0.0".
 
+We can autoscale pods depends on utilization:
+
+kubectl autoscale rc selenium-node-chrome --min=3  --max=5 --cpu-percent=80
+kubectl autoscale rc selenium-node-firefox --min=3  --max=5 --cpu-percent=70
+
+
 
