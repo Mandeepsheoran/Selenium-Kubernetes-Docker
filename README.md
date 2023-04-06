@@ -4,7 +4,7 @@ Created a single node cluster using Minikube. Minikube is a lightweight Kubernet
 
 Once cluster is ready, we can start creating pods, kubenetes services, replication controller, HPA, namespace using yml files.
 
-We can use NodePort or LoadBalancer to expose the outside traffic in VM to access the cluster from Selenium script where we have used RemoteWebDriver to access this URL. We will access the Kubenetes service from outside rather than Selenium Hub, which will control the entire setup of selenium grid.
+We can use NodePort or LoadBalancer to expose the outside traffic in VM to access the cluster from Selenium script where we have used RemoteWebDriver to access this URL. We will access the Kubenetes service from outside rather than Selenium Hub, which will control the entire setup of selenium grid..
 
 If we need multi node cluster then we can use KIND(Kubernetes in Docker) to setup the cluster.
 
